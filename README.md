@@ -74,7 +74,7 @@ def get_profile(request):
 
 ## Exercício 9.3: Refatoração para Segurança
 
-Código completo e testes em [`exercicio_9_3/`](exercicio_9_3/).
+Código completo e testes em [`exercícios/`](exercícios/).
 
 ```python
 import re
@@ -124,7 +124,7 @@ def busca_usuario_por_email(email_digitado, caminho_banco=CAMINHO_BANCO):
 
 **Como o ataque funcionava:** com a entrada `' OR '1'='1`, a query original vira `... WHERE email = '' OR '1'='1'`. A condição é sempre verdadeira e o banco devolve um usuário sem que o atacante conheça nenhum e-mail.
 
-**Testes** (na pasta `exercicio_9_3`): `python -m unittest -v`. Eles mostram o ataque funcionando na versão original e sendo bloqueado na nova, inclusive com a validação desligada, o que prova que o `?` protege por si só.
+**Testes** (na pasta `exercícios`): `python -m unittest -v`. Eles mostram o ataque funcionando na versão original e sendo bloqueado na nova, inclusive com a validação desligada, o que prova que o `?` protege por si só.
 
 ## Exercício 9.4: LGPD
 
